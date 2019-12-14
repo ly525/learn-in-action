@@ -12,7 +12,7 @@ app.use(logger('dev'));
 
 
 app.use(serveStatic(path.join(__dirname, 'public'), {
-  maxAge: '1d',
+  maxAge: 360 * 1000,
   setHeaders: setCustomCacheControl
 }))
 
@@ -20,7 +20,7 @@ app.use(serveStatic(path.join(__dirname, 'public'), {
 function setCustomCacheControl (res, path) {
   if (serveStatic.mime.lookup(path) === 'text/html') {
     // Custom Cache-Control for HTML files
-    res.setHeader('Cache-Control', 'public, max-age=0')
+    res.setHeader('Cache-Control', 'public, max-age=360000')
   }
 }
 
