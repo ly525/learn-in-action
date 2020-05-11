@@ -1,0 +1,2 @@
+rootProject.name='LearnAndroidFromScratch'
+include ':app'
