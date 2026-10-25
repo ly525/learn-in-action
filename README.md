@@ -8,3 +8,6 @@
 test hotfix b
 
 insert with worktree hotfix-x
+
+
+test ahead branch
