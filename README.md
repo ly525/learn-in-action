@@ -5,3 +5,4 @@
 ## 包含的知识点
 1. 浏览器缓存
 2. script-async-defer
+test hotfix b
